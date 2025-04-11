@@ -15,6 +15,7 @@ const clickHandler = function (text) {
     debugger;
     numberOfClicks = numberOfClicks + 1;
     text = 'click ' + numberOfClicks;
+
     if (numberOfClicks <= 3) {
         alert(text);
     } else {
@@ -25,7 +26,22 @@ const clickHandler = function (text) {
 
 // Declare brainSkills array below this line
 
+const brainSkills = [
+    "Front-End Architecture",
+    "HTML",
+    "CSS",
+    "Command line operations",
+    "Vim",
+    "Git",
+    "JavaScript Types",
+  ];
+
 document.addEventListener("DOMContentLoaded", function (event) {
+    console.log(brainSkills);
+    
+    brainSkills.forEach(function (element) {
+        addDevSkill(element);
+    });
 
    document.getElementById('cocktail-section').innerHTML = confuse(ginger);
 
