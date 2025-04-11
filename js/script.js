@@ -12,16 +12,25 @@ const ginger = 'cocktail';
 let numberOfClicks = 0;
 
 const clickHandler = function (text) {
-    debugger;
-    numberOfClicks = numberOfClicks + 1;
-    text = 'click ' + numberOfClicks;
+    // debugger;
+    // numberOfClicks = numberOfClicks + 1;
+    // text = 'click ' + numberOfClicks;
 
-    if (numberOfClicks <= 3) {
-        alert(text);
-    } else {
-        alert("Drink in moderation-- no more cocktails for you!");
-    }
-    console.log('numberOfClicks', numberOfClicks);
+    // if (numberOfClicks <= 3) {
+    //     alert(text);
+    // } else {
+    //     alert("Drink in moderation-- no more cocktails for you!");
+    // }
+    // console.log('numberOfClicks', numberOfClicks);
+
+    numberOfClicks = numberOfClicks + 1;
+	console.log('numberOfClicks', numberOfClicks);
+
+	if (numberOfClicks <= 3) {
+		alert(text);
+	} else {
+		alert("Drink in moderation-- no more cocktails for you!")
+	}
 };
 
 // Declare brainSkills array below this line
