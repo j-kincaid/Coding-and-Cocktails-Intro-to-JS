@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Intro to JS</title>
+    <title>C&amp;C App</title>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
-
   <body>
-    <h1>Introducing JavaScript</h1>
+    <h1>Welcome to Coding &amp; Cocktails!</h1>
 
-    <h2>Variables, Booleans, Operators, Comparison</h2>
-    <h3>
-      Is the first variable times two greater than the second variable?
-    </h3>
-    <div id="math"></div>
+    <div class="content">
+      <div class="learn">
+        <h2>Where smart ladies learn</h2>
+        <ul id="coding-section"></ul>
+      </div>
 
-    <h2>Data Types</h2>
-    <h3>What type is the first variable?</h3>
-    <div id="type"></div>
-    <script src="./js/script.js" type="text/javascript"></script>
+      <div class="meet">
+        <h2>And meet awesome women like</h2>
+        <ul id="fellow-ladydevs"></ul>
+      </div>
+
+      <div class="cocktail">
+        <h2>All while enjoying stylish cocktails!</h2>
+        <button
+          id="cocktail-section"
+          onclick="clickHandler('Hi there LadyDev!')"
+        ></button>
+      </div>
+    </div>
   </body>
 </html>
